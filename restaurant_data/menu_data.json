@@ -1,0 +1,109 @@
+{
+  "restaurant_info": {
+    "name": "Little Thai Corner",
+    "tagline": "Authentic Thai Streetfood",
+    "type": "Thai Food Take Away",
+    "address": "Koning Boudewijnlaan 13, 9200 Dendermonde",
+    "phone": "0470.96.54.35",
+    "opening_hours": {
+      "donderdag_tot_zondag": "17.00 - 20.00 uur",
+      "zondag_extra": "11.30 - 13.00 uur"
+    },
+    "notes": [
+      "Menu tarieven per 01/02/23*",
+      "Bereikbaar 60 minuten voor de vermelde openings uur, afhalen kan tot 30 min. na vermeld sluitings uur. Gelieve bij uw bestelling aan te geven indien U allergisch zou zijn voor bepaalde producten, prijzen kunnen wijzigen in functie van marktomstandigheden.",
+      "Volg ons via facebook 'littel thai corner' of de website."
+    ]
+  },
+  "menu": {
+    "STARTERS": {
+      "note": "Inclusief chillisausje",
+      "items": [
+        {"id": "1", "name": "PHO PIA KAI", "price": "7.00 €", "description": "HUISGEMAAKTE LOEMPIA MET KIP, SOJA, WORTELTJES, KOOL EN THAISE KRUIDEN 5PCS","hot":false},
+        {"id": "2", "name": "PHO PIA VEGAN", "price": "7.00 €", "description": "MINI LOEMPIA MET SOJA, WORTELTJES, KOOL EN THAISE KRUIDEN 6PCS","hot":false},
+        {"id": "3", "name": "KAI SATE", "price": "8.00 €", "description": "HUIS GEMAAKTE KIPSPIESJE IN CURRY MARINADE 5PCS","hot":false},
+        {"id": "4", "name": "KUNG HOM PHA", "price": "8.00 €", "description": "HUISGEMAAKTE SCAMPI-ROLLETJE 5PCS","hot":false},
+        {"id": "5", "name": "SCAMPI TEMPURA", "price": "8.00 €", "description": "HUISGEMAAKTE SCAMPI-ROLLETJE MET TEMPURA 5PCS","hot":false},
+        {"id": "6", "name": "THOD MAN KAI", "price": "8.00 €", "description": "ZELFBEREIDE THAISE KOEKJES MET KIP, RODE CURRY, GROENE BOONTJES, LIMOENBLAD EN EIEREN 5PCS","hot":false},
+        {"id": "7", "name": "THOD MAN KUNG", "price": "9.00 €", "description": "ZELFBEREIDE GARNAAL KOEKJES MET THAISE KRUIDEN, TEMPURA, LOOK KORIANDER EN PEPER 5PCS","hot":false},
+        {"id": "8", "name": "KHA NOM JEEP", "price": "8.00 €", "description": "THAI DIM SUM 6 PCS","hot":false},
+        {"id": "9", "name": "THAI VEGAN SAMOSAS", "price": "7.00 €", "description": "DRIEHOEK FLAPJES MET AARDAPPEL, KOOL, UI, CURRY, CHILLI, LOOK EN GEMBER 8 PCS","hot":false},
+        {"id": "10", "name": "STARTER MIX", "price": "15.00 €", "description": "10 stuks - LOEMPIA, SCAMPIROL, SCAMPI TEMPURA, GARNAALKOEKJES EN KIPSPIESJES","hot":false}
+      ]
+    },
+    "SOEPEN": {
+      "note": "Inclusief rijst",
+      "items": [
+        {"id": "11", "name": "TOM KA KAI", "price": "14.00 €", "description": "SOEP MET KIP, KOKOSMELK, CHAMPIGNONS, GALANGAWORTEL, KORIANDER & CITROENGRAS","hot":false},
+        {"id": "12", "name": "TOM YAM KUNG", "price": "16.00 €", "description": "PITTIGE SOEP MET SCAMPIS, CITROENGRAS, LIMOEN, CHAMPIGNONS, KORIANDER, GALANGA EN UI","hot":false}
+      ]
+    },
+    "CURRRY SCHOTELS": {
+      "note": "Inclusief Thai Jasmin rijst",
+      "items": [
+        {"id": "13", "name": "PANAENG MOO", "price": "16.00 €", "description": "VARKENSVLEES IN RODE CURRY MET KOKOSMELK, PAPRIKA, BAMBOESCHEUTEN, CITROENBLAD EN THAISE KRUIDEN","hot":false},
+        {"id": "14", "name": "PANAENG KUNG", "price": "18.00 €", "description": "SCAMPIS IN RODE CURRY MET KOKOSMELK, PAPRIKA, BAMBOESCHEUTEN, CITROENBLAD THAISE KRUIDEN","hot":false},
+        {"id": "15", "name": "KAENG KHEAW WAAN Nua", "price": "17.00 €", "description": "RUNDSVLEES IN KOKOSMELK MET PITTIGE GROENE CURRY, BAMBOE, PAPRIKA, EIERPLANT & THAISE BASILICUM","hot":false},
+        {"id": "16", "name": "KAENG KHEAW WAAN Kai", "price": "16.00 €", "description": "KIP IN KOKOSMELK MET PITTIGE GROENE CURRY, BAMBOE, PAPRIKA, EIERPLANT & THAISE BASILICUM","hot":false},
+        {"id": "17", "name": "KAENG MASSAMAN Nua", "price": "17.00 €", "description": "RUNDSVLEES IN KOKOSMELK MET MASSAMAN CURRY, AARDAPPEL, UIEN, PINDA'S EN THAISE KRUIDEN","hot":false},
+        {"id": "18", "name": "KAENG MASSAMAN Moo", "price": "16.00 €", "description": "VARKENSVLEES IN KOKOSMELK MET MASSAMAN CURRY, AARDAPPEL, UIEN, PINDA'S EN THAISE KRUIDEN","hot":false},
+        {"id": "19", "name": "KUNG PHAD PONG KAREE", "price": "18.00 €", "description": "SCAMPIS IN GELE CURRY MET SELDER, RODE PAPRIKA, JONGE UITJES, KOKOSMELK, EI EN THAISE CHILLI PASTA","hot":false}
+      ]
+    },
+    "THAI WOK": {
+      "note": "Inclusief Thai Jasmin rijst",
+      "items": [
+        {"id": "20", "name": "PHAD KRAPOUW Kai", "price": "16.00 €", "description": "WOKGERECHT MET KIP IN EEN PIKANTE MENGELING VAN THAISE HOLY BASIL, CHILI EN LOOK","hot":false},
+        {"id": "21", "name": "PHAD KRAPOUW Nua", "price": "17.00 €", "description": "WOKGERECHT MET RUNDSVLEES IN EEN PIKANTE MENGELING VAN THAISE HOLY BASIL, CHILI EN LOOK","hot":false},
+        {"id": "22", "name": "PHAD KRAPOUW Kung", "price": "18.00 €", "description": "WOKGERECHT MET SCAMPIS IN EEN PIKANTE MENGELING VAN THAISE HOLY BASIL, CHILI EN LOOK","hot":false},
+        {"id": "23", "name": "PHAD KRAPOUW Moo", "price": "16.00 €", "description": "WOKGERECHT MET VARKENSVLEES IN EEN PIKANTE MENGELING VAN THAISE HOLY BASIL, CHILI EN LOOK","hot":false},
+        {"id": "24", "name": "NUA PHAD KING", "price": "17.00 €", "description": "GROENTENWOK MET OESTERSAUS, RUNDSLEES, GEMBER, RODE EN GROENE PAPRIKA EN AJUIN","hot":false},
+        {"id": "25", "name": "MOO PHAD KING", "price": "16.00 €", "description": "GROENTENWOK MET OESTERSAUS, VARKENSVLEES, GEMBER, RODE EN GROENE PAPRIKA EN AJUIN","hot":false},
+        {"id": "26", "name": "KAI PHAD KING", "price": "16.00 €", "description": "GROENTENWOK MET OESTERSAUS, KIP, GEMBER, RODE EN GROENE PAPRIKA EN AJUIN","hot":false},
+        {"id": "27", "name": "KAI PHAD KRATIAM", "price": "16.00 €", "description": "WOK MET KIP, LOOK, SOJA, BOONTJES, RODE PAPRIKA, KORIANDERWORTEL, PEPER EN VISSAUS","hot":false},
+        {"id": "28", "name": "PHAD PAK KUNG", "price": "18.00 €", "description": "GROENTENWOK MET SCAMPIS, BROCOLLI, BLOEMKOOL, BOONTJES, WORTEL EN COURGET","hot":false},
+        {"id": "29", "name": "PHAD PAK MOO", "price": "16.00 €", "description": "GROENTENWOK MET VARKENSVLEES, BROCOLLI, BLOEMKOOL, BOONTJES, WORTEL EN COURGET","hot":false},
+        {"id": "30", "name": "KUNG PHAD PIT PAUW", "price": "18.00 €", "description": "WOKGERECHT MET SCAMPI, LENTE-UI, KORIANDER EN THAISE SWEET CHILI PASTA, BASILICUM","hot":false},
+        {"id": "31", "name": "PHAD PRIEUW WAAN MOO", "price": "16.00 €", "description": "ZOETZUUR WOKGERECHT MET VARKEN, KOMKOMMER, ANNANAS, TOMATEN, PAPRIKA, LENTE UITJES EN BROCOLLI","hot":false},
+        {"id": "32", "name": "PHAD PRIEUW WAAN KAI", "price": "16.00 €", "description": "ZOETZUUR WOKGERECHT MET KIP, KOMKOMMER, ANNANAS, TOMATEN, PAPRIKA, LENTE UITJES EN BROCOLLI","hot":false},
+        {"id": "33", "name": "PHAD PRIEUW WAAN KUNG", "price": "18.00 €", "description": "ZOETZUUR WOKGERECHT MET SCAMPIS, KOMKOMMER, ANNANAS, TOMATEN, PAPRIKA, LENTE UITJES EN BROCOLLI","hot":false},
+        {"id": "34", "name": "NUA PHAD PRIK THAI DUM", "price": "17.00 €", "description": "GEWOKTE GROENTE MET RUNDSVLEES, PAPRIKA, LENTE UI, ZWARTE PEPER EN OESTERSAUS","hot":false}
+      ]
+    },
+    "NOEDELGERECHTEN": {
+      "items": [
+        {"id": "35", "name": "PHAD THAI Kai", "price": "15.00 €", "description": "ROERGEBAKKEN RIJSTNOEDEL MET KIP, TOFU, SOJA, PINDAS, EI EN TAMARINE","hot":false},
+        {"id": "36", "name": "PHAD THAI Kung", "price": "17.00 €", "description": "ROERGEBAKKEN RIJSTNOEDEL MET SCAMPI, TOFU, SOJA, PINDAS, EI EN TAMARINE","hot":false}
+      ]
+    },
+    "VEGAN": {
+      "items": [
+        {"id": "37", "name": "PHAD THAI Vegan", "price": "14.00 €", "description": "ROERGEBAKKEN RIJSTNOEDEL MET TOFU, SOJA, PINDAS, EI EN TAMARINE","hot":false},
+        {"id": "38", "name": "PHAD PAK RUAM MIT", "price": "15.00 €", "description": "GROENTENWOK MET OESTERSAUS, PEULERWTJES, CHAMPIGNONS, BROCOLI, RODE EN GROENE PAPRIKA. *Alle gerechten met kip kan je ook verkrijgen met TOFU","hot":false}
+      ]
+    },
+    "THAISE GEBAKKEN RIJSTGERECHTEN": {
+      "items": [
+        {"id": "39", "name": "KHAO PHAD Moo / Kai", "price": "15.00 €", "description": "THAISE GEBAKKEN RIJST MET VARKENSVLEES OF KIP, EI, LENTE UI EN WORTEL","hot":false},
+        {"id": "40", "name": "KHAO PHAD KUNG", "price": "17.00 €", "description": "THAISE GEBAKKEN RIJST MET SCAMPIS, EI, LENTE UI EN WORTEL","hot":false}
+      ]
+    },
+    "SALADES": {
+      "note": "Inclusief Thai Jasmin rijst",
+      "items": [
+        {"id": "41", "name": "LAAB Kai", "price": "15.00 €", "description": "PITTIGE THAISE SALADE MET GEMALEN KIP, LEMON, MUNT EN THAISE KRUIDEN","hot":false},
+        {"id": "42", "name": "LAAB Moo", "price": "16.00 €", "description": "PITTIGE THAISE SALADE MET GEMALEN VARKENSVLEES, LEMON, MUNT EN THAISE KRUIDEN","hot":false},
+        {"id": "43", "name": "LAAB Nua", "price": "17.00 €", "description": "PITTIGE THAISE SALADE MET GEMALEN RUNDSVLEES, LEMON, MUNT EN THAISE KRUIDEN","hot":false},
+        {"id": "44", "name": "NAAM TOK NUA", "price": "17.00 €", "description": "GESNEDEN RUNDSVLEES MET RODE UI, THAISE KRUIDEN EN LIMOENSAP","hot":false}
+      ]
+    },
+    "THAISE BIEREN & EXTRA": {
+      "items": [
+        {"id": "45", "name": "CHANG OF SINGHA in blik 33cl", "price": "2.75 €", "description": "","hot":false},
+        {"id": "46", "name": "EXTRA THAI JASMIN RIJST", "price": "3.00 €", "description": "","hot":false},
+        {"id": "47", "name": "Noedels ter vervanging van Thai jasmin rijst", "price": "5.00 €", "description": "","hot":false},
+        {"id": "48", "name": "extra chillisaus", "price": "1.00 €", "description": "","hot":false}
+      ]
+    }
+  }
+}

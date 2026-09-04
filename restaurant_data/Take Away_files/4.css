@@ -1,0 +1,89 @@
+
+#wb_header { height: 45px; background-color: #24121b; }
+#wb_header:before { background: transparent none repeat left top; background-size: auto auto; opacity: 1; }
+#wb_main { height: 1893px; padding-bottom: 100px; }
+#wb_main > .wb_cont_bg { background-color: transparent; }
+#wb_main > .wb_cont_bg:before { background: transparent url("gallery/Little Thai corner-ts1617626004.jpg") repeat-x center top; background-size: contain; opacity: 0.8; }
+#wb_footer { height: 727px; background-color: #000000; }
+#wb_footer:before { background: transparent none repeat left top; background-size: auto auto; opacity: 1; }
+html { scroll-behavior: smooth; }
+body { background-color: #1f1a1f; }
+body.site:before { background: transparent none repeat scroll center top; background-size: auto auto; opacity: 1; }
+.wb_sbg { background: transparent none repeat left top; }
+body, .wb_sbg { min-width: 1200px; min-height: 2308px; }
+.wb_cont_inner { width: 1200px; }
+.wb_cont_bg { width: 1200px; margin-left: -600px; }
+.root { height: 2665px; min-height: 2308px; }
+#wb_element_instance40 { top: 1px; left: 0px; min-width: 1200px; width: 1200px; min-height: 44px; height: 44px; display: block; z-index: 628; }
+#wb_element_instance40 > ul { display: block; }
+#wb_element_instance40 ul { background: #10e6d7 none no-repeat left top; border: 3px solid #1b1c05; }
+#wb_element_instance40, #wb_element_instance40 ul { text-align: center; }
+#wb_element_instance40 ul ul { background: #1713f0 none repeat left top; }
+#wb_element_instance40 li { margin: 5px 10px 5px 10px; }
+#wb_element_instance40 li a { text-transform: none; border: 3px none #200cf5; padding: 5px 5px 5px 5px; font: normal normal 16px 'Capture it'; text-decoration: none; color: #1168f5; line-height: 18px; background: transparent none repeat left top; }
+#wb_element_instance40 li.over > a, #wb_element_instance40 li:focus > a { border: 0px none #000000; font: normal normal 16px 'Capture it'; text-decoration: none; color: #2964f0; line-height: 18px; background: #faf616 none repeat left top; }
+#wb_element_instance40 li.active > a { border: 0px none #000000; font: normal normal 16px 'Capture it'; text-decoration: none; color: #d554e3; line-height: 18px; background: #31f5f2 none repeat left top; }
+#wb_element_instance40:not(.collapse-expanded) .vmenu ul.open-left,#wb_element_instance40:not(.collapse-expanded) .hmenu ul.open-left { left: auto; right: 100%; }
+#wb_element_instance40:not(.collapse-expanded) .hmenu > li > ul.open-left { left: auto; right: 0; }
+#wb_element_instance41 { top: 0px; left: 0px; min-width: 328px; width: 328px; min-height: 36px; height: 36px; display: block; z-index: 439; }
+#wb_element_instance42 { top: 42px; left: 123px; min-width: 205px; width: 205px; min-height: 72px; height: 72px; display: block; z-index: 428; }
+#wb_element_instance43 { top: 67px; left: 640px; min-width: 246px; width: 246px; min-height: 24px; height: 24px; display: block; z-index: 429; }
+#wb_element_instance44 i { width: 50px; height: 30px; font-size: 30px; }
+#wb_element_instance44 { top: 108px; left: 630px; min-width: 50px; width: 50px; min-height: 30px; height: 30px; display: block; z-index: 434; }
+#wb_element_instance45 { top: 114px; left: 710px; min-width: 206px; width: 206px; min-height: 24px; height: 24px; display: block; z-index: 423; }
+#wb_element_instance46 { top: 24px; left: 640px; min-width: 205px; width: 205px; min-height: 24px; height: 24px; display: block; z-index: 409; }
+#wb_element_instance47 { top: 69px; left: 650px; min-width: 520px; width: 520px; min-height: 526px; height: 526px; display: block; z-index: 126; }
+#wb_element_instance48 { top: 40px; left: 42px; min-width: 568px; width: 568px; min-height: 560px; height: 560px; display: block; z-index: 127; background: transparent; touch-action: manipulation; }
+#wb_element_instance48 .wb-picture-caption { background-color: rgba(235, 235, 235, 0.66); }
+#wb_element_instance48_pswp .wb-picture-caption { background-color: rgba(235, 235, 235, 0.66); }
+#wb_element_instance48 .wb-lightbox-title { font-style: normal normal ; font: normal normal 20px Arial,Helvetica,sans-serif; font-family: Arial,Helvetica,sans-serif; color: #ffffff; text-align: center; }
+#wb_element_instance48_pswp .wb-lightbox-title { font-style: normal normal ; font: normal normal 20px Arial,Helvetica,sans-serif; font-family: Arial,Helvetica,sans-serif; color: #ffffff; text-align: center; }
+#wb_element_instance48 .wb-lightbox-description { font-style: normal normal ; font: normal normal 16px Arial,Helvetica,sans-serif; font-family: Arial,Helvetica,sans-serif; color: #ffffff; text-align: center; }
+#wb_element_instance48_pswp .wb-lightbox-description { font-style: normal normal ; font: normal normal 16px Arial,Helvetica,sans-serif; font-family: Arial,Helvetica,sans-serif; color: #ffffff; text-align: center; }
+#wb_element_instance49 { top: 650px; left: 648px; min-width: 526px; width: 526px; min-height: 417px; height: 417px; display: block; z-index: 128; }
+#wb_element_instance50 { top: 660px; left: 41px; min-width: 566px; width: 566px; min-height: 484px; height: 484px; display: block; z-index: 129; background: transparent; touch-action: manipulation; }
+#wb_element_instance50 .wb-picture-caption { background-color: rgba(237, 237, 237, 0.66); }
+#wb_element_instance50_pswp .wb-picture-caption { background-color: rgba(237, 237, 237, 0.66); }
+#wb_element_instance50 .wb-lightbox-title { font-style: normal normal ; font: normal normal 20px Arial,Helvetica,sans-serif; font-family: Arial,Helvetica,sans-serif; color: #ffffff; text-align: center; }
+#wb_element_instance50_pswp .wb-lightbox-title { font-style: normal normal ; font: normal normal 20px Arial,Helvetica,sans-serif; font-family: Arial,Helvetica,sans-serif; color: #ffffff; text-align: center; }
+#wb_element_instance50 .wb-lightbox-description { font-style: normal normal ; font: normal normal 16px Arial,Helvetica,sans-serif; font-family: Arial,Helvetica,sans-serif; color: #ffffff; text-align: center; }
+#wb_element_instance50_pswp .wb-lightbox-description { font-style: normal normal ; font: normal normal 16px Arial,Helvetica,sans-serif; font-family: Arial,Helvetica,sans-serif; color: #ffffff; text-align: center; }
+#wb_element_instance51 { top: 1174px; left: 643px; min-width: 527px; width: 527px; min-height: 546px; height: 546px; display: block; z-index: 121; }
+#wb_element_instance52 { top: 1177px; left: 40px; min-width: 567px; width: 567px; min-height: 616px; height: 616px; display: block; z-index: 120; background: transparent; touch-action: manipulation; }
+#wb_element_instance52 .wb-picture-caption { background-color: rgba(237, 237, 237, 0.66); }
+#wb_element_instance52_pswp .wb-picture-caption { background-color: rgba(237, 237, 237, 0.66); }
+#wb_element_instance52 .wb-lightbox-title { font-style: normal normal ; font: normal normal 20px Arial,Helvetica,sans-serif; font-family: Arial,Helvetica,sans-serif; color: #ffffff; text-align: center; }
+#wb_element_instance52_pswp .wb-lightbox-title { font-style: normal normal ; font: normal normal 20px Arial,Helvetica,sans-serif; font-family: Arial,Helvetica,sans-serif; color: #ffffff; text-align: center; }
+#wb_element_instance52 .wb-lightbox-description { font-style: normal normal ; font: normal normal 16px Arial,Helvetica,sans-serif; font-family: Arial,Helvetica,sans-serif; color: #ffffff; text-align: center; }
+#wb_element_instance52_pswp .wb-lightbox-description { font-style: normal normal ; font: normal normal 16px Arial,Helvetica,sans-serif; font-family: Arial,Helvetica,sans-serif; color: #ffffff; text-align: center; }
+#wb_element_instance53 { top: 158px; left: 0px; display: block; z-index: 9999; }
+
+
+#wb_element_instance41 p:last-child { margin-bottom: 0; }
+#wb_element_instance41 { opacity: 1; }
+#wb_element_instance42 p:last-child { margin-bottom: 0; }
+#wb_element_instance42 { opacity: 1; }
+#wb_element_instance43 p:last-child { margin-bottom: 0; }
+#wb_element_instance43 { opacity: 1; }
+#wb_element_instance44 { opacity: 1; }
+#wb_element_instance44 i { position: absolute; left: 0px; top: 0px; text-align: center; }
+#wb_element_instance45 p:last-child { margin-bottom: 0; }
+#wb_element_instance45 { opacity: 1; }
+#wb_element_instance46 p:last-child { margin-bottom: 0; }
+#wb_element_instance46 { opacity: 1; }
+#wb_element_instance47 p:last-child { margin-bottom: 0; }
+#wb_element_instance47 { opacity: 1; }
+#wb_element_instance49 p:last-child { margin-bottom: 0; }
+#wb_element_instance49 { opacity: 1; }
+#wb_element_instance51 p:last-child { margin-bottom: 0; }
+#wb_element_instance51 { opacity: 1; }
+
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (max-width: 767px) {
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Thai Corner | Authentiek Thais Streetfood</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 50; display: flex; align-items: center; justify-content: center; }
+    </style>
+</head>
+<body class="bg-stone-950 text-stone-200">
+    
+    <header class="p-8 flex justify-between items-center bg-stone-900 border-b border-stone-800">
+        <h1 class="text-3xl font-bold text-stone-100 tracking-tight">Little Thai Corner</h1>
+        <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold uppercase tracking-widest">
+            <a href="#menu" class="hover:text-amber-500">Menu</a>
+            <a href="#about" class="hover:text-amber-500">Ons Verhaal</a>
+            <a href="#truck" class="hover:text-amber-500">Foodtruck</a>
+            <a href="tel:0470965435" class="bg-amber-600 text-white px-5 py-2 rounded-sm hover:bg-amber-700">Bel: 0470 96 54 35</a>
+        </nav>
+    </header>
+
+    <!-- Thursday Promo -->
+    <section class="bg-amber-900 text-amber-100 p-4 text-center font-semibold">
+        🔥 Donderdag Promo: Gratis extra gerecht bij elke bestelling!
+    </section>
+
+    <!-- Hero -->
+    <section class="relative h-[60vh] flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/img_0_f2a58da19df0dedfe868f740b717336a_1392x1575.0520231214.jpg');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative text-center text-white p-6">
+            <h2 class="text-5xl mb-4 text-amber-400">Authentiek Thais Streetfood</h2>
+            <p class="text-lg font-light">Ontdek de ziel van Thailand in hartje Dendermonde.</p>
+        </div>
+    </section>
+
+    <!-- Hours -->
+    <section class="py-12 px-6 max-w-4xl mx-auto">
+        <div class="bg-stone-900 p-8 rounded border border-stone-800 text-center">
+            <h3 class="text-2xl font-bold text-stone-100 mb-4">Openingstijden</h3>
+            <p class="text-stone-300">Donderdag t/m Zondag: 17.00 - 20.00 uur</p>
+            <p class="text-stone-300">Zondag ook: 11.30 - 13.00 uur</p>
+            <p class="text-sm mt-4 text-amber-500 font-semibold italic">Afhalen kan tot 30 minuten na sluitingstijd.</p>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="py-20 bg-stone-950">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl mb-10 text-center text-amber-500">Menu</h2>
+            <div id="menu-tabs" class="flex flex-wrap justify-center gap-4 mb-12"></div>
+            <div id="category-note" class="text-center italic text-stone-400 mb-8 hidden"></div>
+            <div id="menu-container" class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 px-6 max-w-5xl mx-auto border-t border-stone-800">
+        <h2 class="text-4xl mb-12 text-center text-amber-500">Ons Verhaal</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
+            <div class="text-lg leading-relaxed text-stone-400 space-y-4">
+                <p>Vijftien jaar geleden kon ik voor het eerst en zeker niet voor het laatst genieten van de Thaise keuken.</p>
+                <p>In de straten van Thailand is het onmogelijk te weerstaan aan de geur van streetfood, men begint al heel vroeg in de ochtend en ze gaan verder tot laat in de nacht, Thailand never sleeps. Zelfs op de rivieren zal je geen honger lijden want talrijke bootjes bieden verse warme maaltijden aan maar ook de overheerlijke Thaise pannekoek of sticky rice met verse mango vind je er overal met niet te vergeten vers fruit en ijsjes in overvloed.</p>
+            </div>
+            <img src="assets/img_1_486ab7d640b6f3b34444ce9a7e2ff78a_720x721.387283237.png" alt="Streetfood" class="rounded shadow-xl w-full h-80 object-cover">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <img src="assets/img_2_1c739c91edc33106f9cda2e59ebe88a2_1280x566.71755725191.jpg" alt="Thaise keuken" class="rounded shadow-xl w-full h-80 object-cover order-2 md:order-1">
+            <div class="text-lg leading-relaxed text-stone-400 space-y-4 order-1 md:order-2">
+                <p>Iedereen die er ooit heeft van genoten zal zich terug in Thailand wanen. Wij brengen die ervaring naar Dendermonde met dagverse producten en authentieke kruiden. Onze passie is om u te laten wanen in Thailand bij elke hap.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foodtruck -->
+    <section id="truck" class="py-20 bg-stone-900 border-t border-stone-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl mb-6 text-amber-500">Little Thai Corner Foodtruck</h2>
+            <p class="text-lg text-stone-400 mb-8">Maak uw evenement onvergetelijk met authentieke Thaise smaken. Huur onze foodtruck voor feesten en events.</p>
+            <a href="tel:0470965435" class="bg-stone-700 text-white px-8 py-3 rounded-sm hover:bg-stone-600 text-lg">Contacteer voor info</a>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-stone-950 text-stone-500 text-center border-t border-stone-800">
+        <p class="text-lg font-bold text-stone-300 mb-2">Little Thai Corner</p>
+        <p>Koning Boudewijnlaan 13, 9200 Dendermonde</p>
+        <p class="my-4"><a href="https://facebook.com/littelthaicorner" class="hover:text-amber-500">Volg ons op Facebook</a></p>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <a href="tel:0470965435" class="md:hidden fixed bottom-4 left-4 right-4 bg-amber-600 text-white text-center py-4 rounded-full font-bold shadow-2xl z-40">
+        Bel om te bestellen
+    </a>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="hidden lightbox" onclick="this.classList.add('hidden')">
+        <img id="lightbox-img" src="" alt="Grotere weergave" class="max-h-[90vh] max-w-[90vw] rounded shadow-2xl">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

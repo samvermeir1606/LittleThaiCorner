@@ -1,0 +1,17 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Custom styling to match brand */
+.bg-charcoal {
+    background-color: #1a1a1a;
+}
+.text-gold {
+    color: #d4af37;
+}
+.border-gold {
+    border-color: #d4af37;
+}
+.bg-gold {
+    background-color: #d4af37;
+}

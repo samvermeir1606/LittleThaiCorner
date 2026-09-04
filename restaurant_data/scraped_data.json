@@ -1,0 +1,360 @@
+{
+    "restaurant_name": "About L T C",
+    "base_domain": "www.little-thai-corner.be",
+    "pages": {
+        "/": {
+            "url": "https://www.little-thai-corner.be/",
+            "layout_screenshot": "./scraped_assets/layout_snap_home.png",
+            "headings": [
+                {
+                    "tag": "h3",
+                    "text": "Vijftien jaar geleden kon ik voor het eerst en zeker niet voor het laatst genieten van de Thaise keuken."
+                },
+                {
+                    "tag": "h3",
+                    "text": "In de straten van Thailand is het onmogelijk te weerstaan aan de geur van streetfood, men begint al heel vroeg in de ochtend en ze gaan verder tot laat in de nacht, Thailand never sleeps. Zelfs op de rivieren zal je geen honger lijden want talrijke bootjes bieden verse warme maaltijden aan maar ook de overheerlijke Thaise pannekoek of sticky rice met verse mango vind je er overal met niet te vergeten vers fruit en ijsjes in overvloed.."
+                },
+                {
+                    "tag": "h2",
+                    "text": "Wil je snel genieten van ons heerlijke aanbod ?"
+                }
+            ],
+            "paragraphs": [
+                "Klik dan op de knop hieronder en maak je keuze.",
+                "Heb je vragen, wil je graag weten aan wat U zich kan verwachten? bel en bestel, dit kan al een half uur voor het hierna vermelde openingsuur. Vergeet niet te melden indien je allergisch bent voor bepaalde ingredienten.",
+                "Wij zijn open op woensdag, donderdag, vrijdag, zaterdag en zondag van 17.00 uur tot  20.30 uur.",
+                "Op zondag ook  tussen 11.30 uur en 13.00 uur. Afhalen kan tot 30 minuten na sluiting.",
+                "Volg ook onze donderdag PROMO via facebook, bij je bestelling krijg je een extra gerecht dat we in de kijker willen zetten.",
+                "dus facebook => littel thai corner volgen",
+                "Koning Boudewijnlaan 13",
+                "9200 DENDERMONDE",
+                "Telefoon:+32 470 965 435",
+                "© 2021little-thai-corner.be",
+                "Waar kun je ons vinden?"
+            ],
+            "extracted_images": [
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/f2a58da19df0dedfe868f740b717336a_1392x1575.0520231214.jpg",
+                    "local_path": "./scraped_assets/img_0_f2a58da19df0dedfe868f740b717336a_1392x1575.0520231214.jpg",
+                    "alt_text": "asset"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/486ab7d640b6f3b34444ce9a7e2ff78a_720x721.387283237.png",
+                    "local_path": "./scraped_assets/img_1_486ab7d640b6f3b34444ce9a7e2ff78a_720x721.387283237.png",
+                    "alt_text": "asset"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/1c739c91edc33106f9cda2e59ebe88a2_1280x566.71755725191.jpg",
+                    "local_path": "./scraped_assets/img_2_1c739c91edc33106f9cda2e59ebe88a2_1280x566.71755725191.jpg",
+                    "alt_text": "asset"
+                }
+            ]
+        },
+        "/Take-Away": {
+            "url": "https://www.little-thai-corner.be/Take-Away",
+            "layout_screenshot": "./scraped_assets/layout_snap_Take-Away.png",
+            "headings": [
+                {
+                    "tag": "h3",
+                    "text": "1. Pho Pia Kai"
+                },
+                {
+                    "tag": "h3",
+                    "text": "2. Pho Pia Vegan"
+                },
+                {
+                    "tag": "h3",
+                    "text": "3. Kai Sate"
+                },
+                {
+                    "tag": "h3",
+                    "text": "4. Kung Hom Pha"
+                },
+                {
+                    "tag": "h3",
+                    "text": "5. Scampi Tempura"
+                },
+                {
+                    "tag": "h3",
+                    "text": "6. Thod man Kai"
+                },
+                {
+                    "tag": "h3",
+                    "text": "7. Thod Man Kung"
+                },
+                {
+                    "tag": "h3",
+                    "text": "8. Kha Nom Jeep"
+                },
+                {
+                    "tag": "h3",
+                    "text": "9. Thai Samosas"
+                },
+                {
+                    "tag": "h3",
+                    "text": "10 Starter Mix 10 pcs"
+                },
+                {
+                    "tag": "h3",
+                    "text": "1. Pho Pia Kai"
+                },
+                {
+                    "tag": "h1",
+                    "text": "* Steeds met rijst*"
+                },
+                {
+                    "tag": "h3",
+                    "text": "11. Tom Ka Kai"
+                },
+                {
+                    "tag": "h3",
+                    "text": "13.Panaeng Moo"
+                }
+            ],
+            "paragraphs": [
+                "11. Tom Ka Kai",
+                "11. Tom Ka Kai",
+                "12. Tom Yam Kung",
+                "Beiden mogelijk VEGAN => Op Uw vraag gebruiken we Tofu",
+                "14. Panaeng Kung",
+                "13. Panaeng Moo                                                                             14. Panaeng Kung                                                                       15.Kaeng Kheaw Waan Nua                                                               16.Kaeng Kheaw Waan Kai                                                             17. Kaeng Massaman Nua                                                                 18. Kaeng Massaman Moo                                                               20. Phad Krapouw Kai",
+                "33. Phad Prieuw Waan Kung",
+                "34. Nua pad prik thai dum",
+                "35. Phad Thai Kai ( zonder rijst)                                                     36. Phad Thai Kung (zonder rijst)                                                   39. Khao Phad Kai / Moo                                                                 40. Khao Phad Kung                                                                       41. Laab kai                                                                                 44. Nam Tok Nua",
+                "*** Overige nummers vind je terug op het tabblad `MENU`",
+                "Koning Boudewijnlaan 13",
+                "9200 DENDERMONDE",
+                "Telefoon:+32 470 965 435",
+                "© 2021little-thai-corner.be",
+                "Waar kun je ons vinden?"
+            ],
+            "extracted_images": [
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/65cbc8960d53182d0f255cd16c399985.jpg",
+                    "local_path": "./scraped_assets/img_3_65cbc8960d53182d0f255cd16c399985.jpg",
+                    "alt_text": "asset"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/dfc79a4bdf256883447c658253e5cd16_400x400.jpg",
+                    "local_path": "./scraped_assets/img_4_dfc79a4bdf256883447c658253e5cd16_400x400.jpg",
+                    "alt_text": "1. Pho Pia Kai"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/73b39be3ace708ac3adf60df90a36656_400x400.jpg",
+                    "local_path": "./scraped_assets/img_5_73b39be3ace708ac3adf60df90a36656_400x400.jpg",
+                    "alt_text": "2. Pho Pia Vegan"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/a454bfd2f9675903eb649c7f07eae15f_400x400.jpg",
+                    "local_path": "./scraped_assets/img_6_a454bfd2f9675903eb649c7f07eae15f_400x400.jpg",
+                    "alt_text": "3. Kai Sate"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/bd54b1efdf38ef80186ddbb5e2cfd35f_400x400.jpg",
+                    "local_path": "./scraped_assets/img_7_bd54b1efdf38ef80186ddbb5e2cfd35f_400x400.jpg",
+                    "alt_text": "4. Kung Hom Pha"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/c957bd4ac95379467610be7a58083844_400x400.jpg",
+                    "local_path": "./scraped_assets/img_8_c957bd4ac95379467610be7a58083844_400x400.jpg",
+                    "alt_text": "5. Scampi Tempura"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/5fa976c6f507e3ec83d7a828cc5f9a74_400x400.jpg",
+                    "local_path": "./scraped_assets/img_9_5fa976c6f507e3ec83d7a828cc5f9a74_400x400.jpg",
+                    "alt_text": "6. Thod Man Kai"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/c258da1f62d95d76dc5327ff9c1765a9_400x400.jpg",
+                    "local_path": "./scraped_assets/img_10_c258da1f62d95d76dc5327ff9c1765a9_400x400.jpg",
+                    "alt_text": "7. Thod Man Kung"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/9891853d68f7bf1617ee89fcd5f2c14d_400x400.jpg",
+                    "local_path": "./scraped_assets/img_11_9891853d68f7bf1617ee89fcd5f2c14d_400x400.jpg",
+                    "alt_text": "8. Kha Nom Jeep"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/271f3d335c3c90ebc8ef4cff47de600d_400x400.jpg",
+                    "local_path": "./scraped_assets/img_12_271f3d335c3c90ebc8ef4cff47de600d_400x400.jpg",
+                    "alt_text": "9. Thai Samosas Vegan of Curry"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/390aedfaa2c58365e09fa15a45bd5f33_400x400.jpg",
+                    "local_path": "./scraped_assets/img_13_390aedfaa2c58365e09fa15a45bd5f33_400x400.jpg",
+                    "alt_text": "10. Starter Mix"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/d6013b5ca3abdd36581d28cb29fcfd2b.jpg",
+                    "local_path": "./scraped_assets/img_14_d6013b5ca3abdd36581d28cb29fcfd2b.jpg",
+                    "alt_text": "asset"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/7716f084a8a0ca124a552a85aeece9ae_400x400.jpg",
+                    "local_path": "./scraped_assets/img_15_7716f084a8a0ca124a552a85aeece9ae_400x400.jpg",
+                    "alt_text": "11. Tom Ka Kai"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/fb68e5066a9542c9889ad4ef9fe736e2_400x400.jpg",
+                    "local_path": "./scraped_assets/img_16_fb68e5066a9542c9889ad4ef9fe736e2_400x400.jpg",
+                    "alt_text": "12. Tom Yam Kung"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/bb73e078c8cc1b07e08e51d300a76282.jpg",
+                    "local_path": "./scraped_assets/img_17_bb73e078c8cc1b07e08e51d300a76282.jpg",
+                    "alt_text": "asset"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/19a434b7002fb80466e7e907bd5c222c_400x400.jpg",
+                    "local_path": "./scraped_assets/img_18_19a434b7002fb80466e7e907bd5c222c_400x400.jpg",
+                    "alt_text": "13.Panaeng Moo"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/67cdaea63c89687590e8f7864463249d_400x400.jpg",
+                    "local_path": "./scraped_assets/img_19_67cdaea63c89687590e8f7864463249d_400x400.jpg",
+                    "alt_text": "14. Panaeng kung"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/e1041bda0ad6122ae99c897972b63780_400x400.jpg",
+                    "local_path": "./scraped_assets/img_20_e1041bda0ad6122ae99c897972b63780_400x400.jpg",
+                    "alt_text": "15.Kaeng Kheow Waan Nua"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/257733efa2b525d586b86b6166170f16_400x400.jpg",
+                    "local_path": "./scraped_assets/img_21_257733efa2b525d586b86b6166170f16_400x400.jpg",
+                    "alt_text": "16. Kaeng Kheow Waan Kai"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/2c63dac808612a10faeabc467c5b3053_400x400.jpg",
+                    "local_path": "./scraped_assets/img_22_2c63dac808612a10faeabc467c5b3053_400x400.jpg",
+                    "alt_text": "17. Kaeng Massaman Nua"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/c4c1eb1b0b755d1ed665ff1a580215b4_400x400.jpg",
+                    "local_path": "./scraped_assets/img_23_c4c1eb1b0b755d1ed665ff1a580215b4_400x400.jpg",
+                    "alt_text": "18.Kaeng Massaman Moo / Kai"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/d0d909bdf5ec5c4a17e43ccdd27edd3e_400x400.jpg",
+                    "local_path": "./scraped_assets/img_24_d0d909bdf5ec5c4a17e43ccdd27edd3e_400x400.jpg",
+                    "alt_text": "20.phad Krapouw Kai"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/7caa4ceb3ad4fd0c11146578a2fd4d7f_400x400.jpg",
+                    "local_path": "./scraped_assets/img_25_7caa4ceb3ad4fd0c11146578a2fd4d7f_400x400.jpg",
+                    "alt_text": "33. Phad Prieuw Waan Kung"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/6a17a87fd54dd78f3c00db70228c1dbc_400x400.jpg",
+                    "local_path": "./scraped_assets/img_26_6a17a87fd54dd78f3c00db70228c1dbc_400x400.jpg",
+                    "alt_text": "34. Nua phad prik Thai Dum"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/ca2868eb23e5345a89f3c7d4762843ec_400x400.jpg",
+                    "local_path": "./scraped_assets/img_27_ca2868eb23e5345a89f3c7d4762843ec_400x400.jpg",
+                    "alt_text": "35. Phad Thai Kai"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/94ea9b422ca0e6d80bbf855fcb58f94a_400x400.jpg",
+                    "local_path": "./scraped_assets/img_28_94ea9b422ca0e6d80bbf855fcb58f94a_400x400.jpg",
+                    "alt_text": "36. Phad Thai Kung"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/84e109c2d3aa2784ffc054aa58942b54_400x400.jpg",
+                    "local_path": "./scraped_assets/img_29_84e109c2d3aa2784ffc054aa58942b54_400x400.jpg",
+                    "alt_text": "39. Khao Phad Kai / Moo"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/b657d03c7634ac2289665535c97af54e_400x400.jpg",
+                    "local_path": "./scraped_assets/img_30_b657d03c7634ac2289665535c97af54e_400x400.jpg",
+                    "alt_text": "40.Khao Phad Kung"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/230ffd96509dbecfabbbb3cf512144a2_400x400.jpg",
+                    "local_path": "./scraped_assets/img_31_230ffd96509dbecfabbbb3cf512144a2_400x400.jpg",
+                    "alt_text": "41. Laab Kai"
+                },
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/6a46767f5efe79c5720d09380e206016_400x400.jpg",
+                    "local_path": "./scraped_assets/img_32_6a46767f5efe79c5720d09380e206016_400x400.jpg",
+                    "alt_text": "44. Nam Tok Nua"
+                }
+            ]
+        },
+        "/MENU-D1": {
+            "url": "https://www.little-thai-corner.be/MENU-D1",
+            "layout_screenshot": "./scraped_assets/layout_snap_MENU-D1.png",
+            "headings": [],
+            "paragraphs": [
+                "Koning Boudewijnlaan 13",
+                "9200 DENDERMONDE",
+                "Telefoon:+32 470 965 435",
+                "© 2021little-thai-corner.be",
+                "Waar kun je ons vinden?"
+            ],
+            "extracted_images": [
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/eb7269480ae1d0c25696b2b5cf280bbc_2400x1320.jpg",
+                    "local_path": "./scraped_assets/img_33_eb7269480ae1d0c25696b2b5cf280bbc_2400x1320.jpg",
+                    "alt_text": "asset"
+                }
+            ]
+        },
+        "/MENU-2": {
+            "url": "https://www.little-thai-corner.be/MENU-2",
+            "layout_screenshot": "./scraped_assets/layout_snap_MENU-2.png",
+            "headings": [],
+            "paragraphs": [
+                "Koning Boudewijnlaan 13",
+                "9200 DENDERMONDE",
+                "Telefoon:+32 470 965 435",
+                "© 2021little-thai-corner.be",
+                "Waar kun je ons vinden?"
+            ],
+            "extracted_images": [
+                {
+                    "original_url": "https://www.little-thai-corner.be/gallery_gen/14bf0a3f1a1f035cb0e1c65620f8cfbc_2392x1264.jpg",
+                    "local_path": "./scraped_assets/img_34_14bf0a3f1a1f035cb0e1c65620f8cfbc_2392x1264.jpg",
+                    "alt_text": "asset"
+                }
+            ]
+        },
+        "/Contact": {
+            "url": "https://www.little-thai-corner.be/Contact",
+            "layout_screenshot": "./scraped_assets/layout_snap_Contact.png",
+            "headings": [
+                {
+                    "tag": "h2",
+                    "text": "Woensdag : 17.00-21:00"
+                },
+                {
+                    "tag": "h2",
+                    "text": "Donderdag: 17.00-21:00"
+                },
+                {
+                    "tag": "h2",
+                    "text": "Vrijdag     : 17.00-21.00"
+                },
+                {
+                    "tag": "h2",
+                    "text": "Zaterdag   : 17.00-21.00"
+                },
+                {
+                    "tag": "h2",
+                    "text": "Zondag     : 11.30-13.30"
+                }
+            ],
+            "paragraphs": [
+                "Afhalen ter hoogte van positie 2",
+                "Koning Boudewijnlaan 13",
+                ":  17 . 0 0 - 21. 0 0",
+                "Koning Boudewijnlaan 13",
+                "9200 DENDERMONDE",
+                "Telefoon:+32 470 965 435",
+                "© 2021little-thai-corner.be",
+                "Waar kun je ons vinden?"
+            ],
+            "extracted_images": []
+        }
+    }
+}
