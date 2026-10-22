@@ -32,92 +32,89 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const menuData = {
         "STARTERS": {
-            "note": "Inclusief chillisausje",
+            "note": "Inclusief chilisausje",
             "items": [
-                {"id": "1", "name": "Pho Pia Kai", "price": "7.00 €", "description": "Huisgemaakte loempia met kip, soja, worteltjes, kool en Thaise kruiden 5pcs"},
-                {"id": "2", "name": "Pho Pia Vegan", "price": "7.00 €", "description": "Mini loempia met soja, worteltjes, kool en Thaise kruiden 6pcs"},
-                {"id": "3", "name": "Kai Sate", "price": "8.00 €", "description": "Huis gemaakte kipspiesje in curry marinade 5pcs"},
-                {"id": "4", "name": "Kung Hom Pha", "price": "8.00 €", "description": "Huisgemaakte scampi-rolletje 5pcs"},
-                {"id": "5", "name": "Scampi Tempura", "price": "8.00 €", "description": "Huisgemaakte scampi-rolletje met tempura 5pcs"},
-                {"id": "6", "name": "Thod Man Kai", "price": "8.00 €", "description": "Zelfbereide Thaise koekjes met kip, rode curry, groene boontjes, limoenblad en eieren 5pcs"},
-                {"id": "7", "name": "Thod Man Kung", "price": "9.00 €", "description": "Zelfbereide garnaal koekjes met Thaise kruiden, tempura, look koriander en peper 5pcs"},
-                {"id": "8", "name": "Kha Nom Jeep", "price": "8.00 €", "description": "Thai Dim Sum 6 pcs"},
-                {"id": "9", "name": "Thai Vegan Samosas", "price": "7.00 €", "description": "Driehoek flapjes met aardappel, kool, ui, curry, chilli, look en gember 8 pcs"},
-                {"id": "10", "name": "Starter Mix", "price": "15.00 €", "description": "10 stuks - Loempia, scampirol, scampi tempura, garnaalkoekjes en kipspiesjes"}
+                {"id": "1", "name": "Pho Pia Kai", "price": "8.50 €", "description": "Huisgemaakte loempia met kip, soja, worteltjes, kool en Thaise kruiden 5 pcs"},
+                {"id": "2", "name": "Pho Pia Vegan", "price": "8.00 €", "description": "Mini loempia met soja, worteltjes, kool en kruiden 10 pcs"},
+                {"id": "3", "name": "Kai Sate / Yakitori", "price": "8.00 €", "description": "Huisgemaakte kipspiesjes in curry marinade 3 pcs, of kip teriyaki 7 pcs"},
+                {"id": "4", "name": "Kung Hom Pha", "price": "9.00 €", "description": "Huisgemaakte scampi-rolletjes in bladerdeeg 5 pcs"},
+                {"id": "5", "name": "Scampi Tempura", "price": "8.50 €", "description": "Scampi-rolletjes in tempuradeeg 6 pcs"},
+                {"id": "6", "name": "Thod Man Kai", "price": "9.00 €", "description": "Zelfbereide Thaise koekjes met kip, rode curry, groene boontjes, limoenblad en eieren 5 pcs"},
+                {"id": "7", "name": "Thod Man Kung", "price": "9.50 €", "description": "Zelfbereide garnaalkoekjes met Thaise kruiden, tempura, look, koriander en peper 5 pcs"},
+                {"id": "8", "name": "Kha Nom Jeep", "price": "8.00 €", "description": "Thaise dumplings gevuld met kip, vlees en garnaal, gestoomd in een bamboestomer 6 pcs"},
+                {"id": "9", "name": "Thai Vegan Samosas", "price": "8.00 €", "description": "Driehoekige flapjes gevuld met aardappel, ui, chili, look en gember 10 pcs"},
+                {"id": "10", "name": "Starter Mix", "price": "17.00 €", "description": "10 stuks: loempia, scampirol, scampi tempura, garnaalkoekjes, kipkoekjes en kipspiesjes"},
+                {"id": "10a", "name": "Starter Mix XL", "price": "24.00 €", "description": "15 stuks: loempia, scampirol, scampi tempura, garnaalkoekjes, kipkoekjes en kipspiesjes"}
             ]
         },
         "SOEPEN": {
-            "note": "Inclusief rijst",
+            "note": "Inclusief Thai jasmijnrijst (500 cc)",
             "items": [
-                {"id": "11", "name": "Tom Ka Kai", "price": "14.00 €", "description": "Soep met kip, kokosmelk, champignons, galangawortel, koriander & citroengras"},
-                {"id": "12", "name": "Tom Yam Kung", "price": "16.00 €", "description": "Pittige soep met scampis, citroengras, limoen, champignons, koriander, galanga en ui"}
+                {"id": "11", "name": "Tom Ka Kai / Vegan", "price": "17.00 €", "description": "Soep met kip of tofu, kokosmelk, champignons, galanga, koriander & citroengras"},
+                {"id": "12", "name": "Tom Yam Kung", "price": "18.00 €", "description": "Pittige soep met scampi's, citroengras, limoen, champignons, koriander, galanga en ui"}
             ]
         },
         "CURRY SCHOTELS": {
-            "note": "Inclusief Thai Jasmin rijst",
+            "note": "Inclusief Thai jasmijnrijst (500 cc)",
             "items": [
-                {"id": "13", "name": "Panaeng Moo", "price": "16.00 €", "description": "Varkensvlees in rode curry met kokosmelk, paprika, bamboescheuten, citroenblad en Thaise kruiden"},
-                {"id": "14", "name": "Panaeng Kung", "price": "18.00 €", "description": "Scampis in rode curry met kokosmelk, paprika, bamboescheuten, citroenblad Thaise kruiden"},
-                {"id": "15", "name": "Kaeng Kheaw Waan Nua", "price": "17.00 €", "description": "Rundsvlees in kokosmelk met pittige groene curry, bamboe, paprika, eierplant & Thaise basilicum"},
-                {"id": "16", "name": "Kaeng Kheaw Waan Kai", "price": "16.00 €", "description": "Kip in kokosmelk met pittige groene curry, bamboe, paprika, eierplant & Thaise basilicum"},
-                {"id": "17", "name": "Kaeng Massaman Nua", "price": "17.00 €", "description": "Rundsvlees in kokosmelk met Massaman curry, aardappel, uien, pinda's en Thaise kruiden"},
-                {"id": "18", "name": "Kaeng Massaman Moo", "price": "16.00 €", "description": "Varkensvlees in kokosmelk met Massaman curry, aardappel, uien, pinda's en Thaise kruiden"},
-                {"id": "19", "name": "Kung Phad Pong Karee", "price": "18.00 €", "description": "Scampis in gele curry met selder, rode paprika, jonge uitjes, kokosmelk, ei en Thaise chilli pasta"}
+                {"id": "13", "name": "Panaeng Moo / Kai", "price": "18.00 €", "description": "Varkensvlees of kip in een romige, mild pittige variant van rode curry, met kokosmelk, paprika, bamboescheuten, limoen en Thaise kruiden"},
+                {"id": "14", "name": "Panaeng Kung / Ped", "price": "19.00 €", "description": "Scampi's of eend in een romige, mild pittige variant van rode curry, met kokosmelk, paprika, bamboescheuten, citroenblad en Thaise kruiden"},
+                {"id": "15", "name": "Kaeng Kheaw Waan Ped", "price": "19.00 €", "description": "Eend in kokosmelk met pittige groene curry, bamboe, paprika, eierplant & Thaise basilicum"},
+                {"id": "16", "name": "Kaeng Kheaw Waan Kai / Moo", "price": "18.00 €", "description": "Kip of varkensvlees in kokosmelk met pittige groene curry, bamboe, paprika, eierplant & Thaise basilicum"},
+                {"id": "17", "name": "Kaeng Massaman Nua", "price": "20.00 €", "description": "Rundsvlees in kokosmelk met massaman curry, aardappel, uien, pinda's en Thaise kruiden. Ook met eend (19.00 €)"},
+                {"id": "18", "name": "Kaeng Massaman Moo / Kai", "price": "18.00 €", "description": "Varkensvlees of kip in kokosmelk met massaman curry, aardappel, uien, pinda's en Thaise kruiden"},
+                {"id": "19", "name": "Kai Phad Pong Karee", "price": "18.00 €", "description": "Kip in gele curry met selder, rode paprika, lente-uitjes, kokosmelk, ei en Thaise chilipasta. Ook mogelijk met eend of scampi (19.00 €)"}
             ]
         },
         "THAI WOK": {
-            "note": "Inclusief Thai Jasmin rijst",
+            "note": "Inclusief Thai jasmijnrijst (500 cc)",
             "items": [
-                {"id": "20", "name": "Phad Krapouw Kai", "price": "16.00 €", "description": "Wokgerecht met kip in een pikante mengeling van Thaise holy basil, chili en look"},
-                {"id": "21", "name": "Phad Krapouw Nua", "price": "17.00 €", "description": "Wokgerecht met rundsvlees in een pikante mengeling van Thaise holy basil, chili en look"},
-                {"id": "22", "name": "Phad Krapouw Kung", "price": "18.00 €", "description": "Wokgerecht met scampis in een pikante mengeling van Thaise holy basil, chili en look"},
-                {"id": "23", "name": "Phad Krapouw Moo", "price": "16.00 €", "description": "Wokgerecht met varkensvlees in een pikante mengeling van Thaise holy basil, chili en look"},
-                {"id": "24", "name": "Nua Phad King", "price": "17.00 €", "description": "Groentenwok met oestersaus, rundslees, gember, rode en groene paprika en ajuin"},
-                {"id": "25", "name": "Moo Phad King", "price": "16.00 €", "description": "Groentenwok met oestersaus, varkensvlees, gember, rode en groene paprika en ajuin"},
-                {"id": "26", "name": "Kai Phad King", "price": "16.00 €", "description": "Groentenwok met oestersaus, kip, gember, rode en groene paprika en ajuin"},
-                {"id": "27", "name": "Kai Phad Kratiam", "price": "16.00 €", "description": "Wok met kip, look, soja, boontjes, rode paprika, korianderwortel, peper en vissaus"},
-                {"id": "28", "name": "Phad Pak Kung", "price": "18.00 €", "description": "Groentenwok met scampis, brocolli, bloemkool, boontjes, wortel en courget"},
-                {"id": "29", "name": "Phad Pak Moo", "price": "16.00 €", "description": "Groentenwok met varkensvlees, brocolli, bloemkool, boontjes, wortel en courget"},
-                {"id": "30", "name": "Kung Phad Pit Pauw", "price": "18.00 €", "description": "Wokgerecht met scampi, lente-ui, koriander en Thaise sweet chili pasta, basilicum"},
-                {"id": "31", "name": "Phad Prieuw Waan Moo", "price": "16.00 €", "description": "Zoetzuur wokgerecht met varken, komkommer, annanas, tomaten, paprika, lente uitjes en brocolli"},
-                {"id": "32", "name": "Phad Prieuw Waan Kai", "price": "16.00 €", "description": "Zoetzuur wokgerecht met kip, komkommer, annanas, tomaten, paprika, lente uitjes en brocolli"},
-                {"id": "33", "name": "Phad Prieuw Waan Kung", "price": "18.00 €", "description": "Zoetzuur wokgerecht met scampis, komkommer, annanas, tomaten, paprika, lente uitjes en brocolli"},
-                {"id": "34", "name": "Nua Phad Prik Thai Dum", "price": "17.00 €", "description": "Gewokte groente met rundsvlees, paprika, lente ui, zwarte peper en oestersaus"}
+                {"id": "20", "name": "Phad Krapouw Moo / Kai", "price": "18.00 €", "description": "Wokgerecht met varkensvlees of kip in een pikante mengeling van Thaise holy basil, chili en look"},
+                {"id": "21", "name": "Phad Krapouw Nua", "price": "20.00 €", "description": "Wokgerecht met rund in een pikante mengeling van Thaise holy basil, chili en look"},
+                {"id": "22", "name": "Phad Krapouw Talay", "price": "22.00 €", "description": "Wok van zeevruchten in een pikante mengeling van Thaise holy basil, chili en look. Met scampi's: 19.00 €"},
+                {"id": "23", "name": "Moo Tot Kratiem Prik Thai", "price": "18.00 €", "description": "Pittig kruidig wokgerecht met varkensvlees of kip, sojasaus, oestersaus, zwarte peper en look"},
+                {"id": "24", "name": "Nua Phad King", "price": "20.00 €", "description": "Groentewok met oestersaus, rundsvlees, gember, rode en groene paprika en ajuin"},
+                {"id": "25", "name": "Ped / Kung Phad King", "price": "19.00 €", "description": "Groentewok met oestersaus, eend of scampi, gember, rode en groene paprika en ajuin"},
+                {"id": "26", "name": "Kai / Moo Phad King", "price": "18.00 €", "description": "Groentewok met oestersaus, kip of varkensvlees, gember, rode en groene paprika en ajuin"},
+                {"id": "27", "name": "Kai / Moo Phad Kratiam", "price": "18.00 €", "description": "Wok met kip of varkensvlees, look, soja, groene en rode paprika, courgette, korianderwortel, peper en vissaus. Ook mogelijk met eend (19.00 €)"},
+                {"id": "28", "name": "Phad Pak Kung / Ped", "price": "19.00 €", "description": "Groentewok met scampi of eend, broccoli, bloemkool, boontjes, wortel en courgette. Ook mogelijk met rundsvlees (20.00 €)"},
+                {"id": "29", "name": "Phad Pak Moo / Kai", "price": "18.00 €", "description": "Groentewok met varkensvlees of kip, broccoli, bloemkool, boontjes, wortel en courgette. Ook mogelijk met rundsvlees of eend (19.00 €)"},
+                {"id": "30", "name": "Kung / Ped Phad Pit Pauw", "price": "19.00 €", "description": "Wokgerecht met scampi of eend, lente-ui, koriander, Thaise sweet chilipasta en basilicum. Ook mogelijk met rundsvlees (20.00 €), varkensvlees of kip (18.00 €)"},
+                {"id": "31", "name": "Phad Prieuw Waan Ped / Kung", "price": "19.00 €", "description": "Zoetzuur wokgerecht met eend of scampi's, komkommer, ananas, tomaten, paprika, lente-uitjes en broccoli"},
+                {"id": "32", "name": "Phad Prieuw Waan Moo / Kai", "price": "18.00 €", "description": "Zoetzuur wokgerecht met varkensvlees of kip, komkommer, ananas, tomaten, paprika, lente-uitjes en broccoli"},
+                {"id": "33", "name": "Kai Phad Med Mamuang", "price": "18.00 €", "description": "Wokgerecht met kip, look, lente-ui en geroosterde noten. Ook mogelijk met varkensvlees"},
+                {"id": "34", "name": "Nua Phad Prik Thai Dum", "price": "20.00 €", "description": "Gewokte groenten met rundsvlees, paprika, lente-ui, zwarte peper en oestersaus. Ook mogelijk met kip, varkensvlees (18.00 €) of eend (19.00 €)"}
             ]
         },
         "NOEDELGERECHTEN": {
             "items": [
-                {"id": "35", "name": "Phad Thai Kai", "price": "15.00 €", "description": "Roergebakken rijstnoedel met kip, tofu, soja, pindas, ei en tamarine"},
-                {"id": "36", "name": "Phad Thai Kung", "price": "17.00 €", "description": "Roergebakken rijstnoedel met scampi, tofu, soja, pindas, ei en tamarine"}
+                {"id": "35", "name": "Phad Thai Kai / Moo", "price": "17.00 €", "description": "Roergebakken rijstnoedels met kip of varkensvlees, lente-ui, soja, pinda's, ei en tamarinde"},
+                {"id": "36", "name": "Phad Thai Kung / Ped", "price": "18.00 €", "description": "Roergebakken rijstnoedels met scampi of eend, lente-ui, tofu, soja, pinda's, ei en tamarinde"},
+                {"id": "37", "name": "Phad Thai Vegan", "price": "17.00 €", "description": "Roergebakken rijstnoedels met tofu, lente-ui, soja, pinda's en tamarinde"},
+                {"id": "38", "name": "Bami met kip", "price": "17.00 €", "description": "Roergebakken eiernoedels met kip, lente-ui, soja, wortel en ajuin"}
             ]
         },
-        "VEGAN": {
+        "GEBAKKEN RIJSTGERECHTEN": {
             "items": [
-                {"id": "37", "name": "Phad Thai Vegan", "price": "14.00 €", "description": "Roergebakken rijstnoedel met tofu, soja, pindas, ei en tamarine"},
-                {"id": "38", "name": "Phad Pak Ruam Mit", "price": "15.00 €", "description": "Groentenwok met oestersaus, peulerwtjes, champignons, brocoli, rode en groene paprika. *Alle gerechten met kip kan je ook verkrijgen met Tofu"}
-            ]
-        },
-        "THAISE GEBAKKEN RIJSTGERECHTEN": {
-            "items": [
-                {"id": "39", "name": "Khao Phad Moo / Kai", "price": "15.00 €", "description": "Thaise gebakken rijst met varkensvlees of kip, ei, lente ui en wortel"},
-                {"id": "40", "name": "Khao Phad Kung", "price": "17.00 €", "description": "Thaise gebakken rijst met scampis, ei, lente ui en wortel"}
+                {"id": "39", "name": "Khao Phad Moo / Kai", "price": "18.00 €", "description": "Thaise gebakken rijst met varkensvlees of kip, ei, lente-ui en wortel"},
+                {"id": "40", "name": "Khao Phad Ped / Kung", "price": "19.00 €", "description": "Thaise gebakken rijst met eend of scampi's, ei, lente-ui en wortel. Ook mogelijk met zeevruchten of rund (20.00 €)"}
             ]
         },
         "SALADES": {
-            "note": "Inclusief Thai Jasmin rijst",
+            "note": "Inclusief Thai jasmijnrijst (500 cc)",
             "items": [
-                {"id": "41", "name": "Laab Kai", "price": "15.00 €", "description": "Pittige Thaise salade met gemalen kip, lemon, munt en Thaise kruiden"},
-                {"id": "42", "name": "Laab Moo", "price": "16.00 €", "description": "Pittige Thaise salade met gemalen varkensvlees, lemon, munt en Thaise kruiden"},
-                {"id": "43", "name": "Laab Nua", "price": "17.00 €", "description": "Pittige Thaise salade met gemalen rundsvlees, lemon, munt en Thaise kruiden"},
-                {"id": "44", "name": "Nam Tok Nua", "price": "17.00 €", "description": "Gesneden rundsvlees met rode ui, Thaise kruiden en limoensap"}
+                {"id": "41", "name": "Laab Ped", "price": "19.00 €", "description": "Pittige Thaise salade met gehakte eend, lemon, munt en Thaise kruiden"},
+                {"id": "42", "name": "Laab Moo / Kai", "price": "18.00 €", "description": "Pittige Thaise salade met gehakt varkensvlees of kip, lemon, munt en Thaise kruiden"},
+                {"id": "43", "name": "Laab Nua", "price": "20.00 €", "description": "Pittige Thaise salade met gehakt rundsvlees, lemon, munt en Thaise kruiden"},
+                {"id": "44", "name": "Nam Tok Nua", "price": "20.00 €", "description": "In fijne reepjes gesneden rundsvlees met rode ui, Thaise kruiden en limoensap"}
             ]
         },
-        "THAISE BIEREN & EXTRA": {
+        "VEGAN & EXTRA": {
+            "note": "Op uw vraag kan je alle gerechten met kip uit dit menu vervangen door tofu",
             "items": [
-                {"id": "45", "name": "Chang of Singha in blik 33cl", "price": "2.75 €", "description": ""},
-                {"id": "46", "name": "Extra Thai Jasmin rijst", "price": "3.00 €", "description": ""},
-                {"id": "47", "name": "Noedels ter vervanging van Thai jasmin rijst", "price": "5.00 €", "description": ""},
-                {"id": "48", "name": "extra chillisaus", "price": "1.00 €", "description": ""}
+                {"id": "45", "name": "Phad Pak Ruam Mit Tofu", "price": "17.00 €", "description": "Groentewok met tofu, broccoli, bloemkool, boontjes, wortel en courgette"},
+                {"id": "46", "name": "Extra Thai jasmijnrijst", "price": "3.00 €", "description": "Extra portie Thai jasmijnrijst (500 cc). Ook mogelijk: pindanotensaus of chilisaus à 1.00 €"},
+                {"id": "47", "name": "Rijst vervangen door noedels / gebakken rijst", "price": "7.00 €", "description": "Ter vervanging van de rijst bij uw gerecht, enkel als dubbele portie (1000 cc). Niet ter vervanging (extra): 10.00 €"}
             ]
         }
     };
