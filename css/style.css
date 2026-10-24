@@ -1,17 +1,21 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-/* Custom styling to match brand */
-.bg-charcoal {
-    background-color: #1a1a1a;
+h1, h2, h3, .font-display {
+    font-family: 'Playfair Display', serif;
 }
-.text-gold {
-    color: #d4af37;
+
+/* Horizontal scrollers (nav, menu categories, dishes) without a visible scrollbar */
+.no-scrollbar {
+    scrollbar-width: none;
 }
-.border-gold {
-    border-color: #d4af37;
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
 }
-.bg-gold {
-    background-color: #d4af37;
+
+/* Menu carousel: dish cards snap to the left edge of the track */
+#menu-track {
+    scroll-padding-inline: 1rem;
+    overscroll-behavior-x: contain;
 }

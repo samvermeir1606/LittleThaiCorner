@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Little Thai Corner</title>
+    <meta name="description" content="Het volledige take away menu van Little Thai Corner in Dendermonde.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-stone-950 text-stone-200" data-page="menu">
+
+    <header id="site-header"></header>
+
+    <section class="py-12 md:py-16">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl mb-2 text-center text-amber-500 px-6">Menu</h2>
+            <p class="text-center text-stone-500 text-sm mb-8 px-6">Swipe door de gerechten of kies een categorie.</p>
+
+            <!-- Category bar, follows the dish you're looking at -->
+            <div class="sticky z-30 bg-stone-950/95 backdrop-blur border-y border-stone-800" style="top: var(--header-height, 0px);">
+                <div id="menu-tabs" class="flex gap-2 overflow-x-auto no-scrollbar px-4 py-3 cursor-grab"></div>
+            </div>
+            <p id="category-note" class="text-center italic text-stone-400 text-sm px-6 py-3 invisible">&nbsp;</p>
+
+            <!-- One long track with every dish -->
+            <div id="menu-track" tabindex="0" aria-label="Gerechten" class="relative flex gap-4 overflow-x-auto snap-x snap-mandatory no-scrollbar px-4 pb-2 focus:outline-none cursor-grab select-none"></div>
+
+            <div class="flex items-center justify-between gap-4 px-4 mt-4">
+                <button id="menu-prev" type="button" aria-label="Vorig gerecht" class="w-11 h-11 rounded-full border border-stone-700 text-stone-200 hover:border-amber-600 disabled:opacity-30 disabled:hover:border-stone-700">&larr;</button>
+                <p id="menu-counter" class="text-xs uppercase tracking-widest text-stone-500 text-center"></p>
+                <button id="menu-next" type="button" aria-label="Volgend gerecht" class="w-11 h-11 rounded-full border border-stone-700 text-stone-200 hover:border-amber-600 disabled:opacity-30 disabled:hover:border-stone-700">&rarr;</button>
+            </div>
+
+            <div class="text-center mt-10 px-6 space-y-2">
+                <p class="text-sm text-amber-500 font-semibold italic">Bestellen kan tot 30 minuten voor sluiting. Geen gehoor? Dan bellen we indien mogelijk terug.</p>
+                <p class="text-xs text-stone-500">Gelieve bij uw bestelling te melden als u allergisch bent voor bepaalde producten. Prijzen kunnen aangepast worden in functie van de marktsituatie.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="site-footer"></footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center" onclick="this.classList.add('hidden')">
+        <img id="lightbox-img" alt="Grotere weergave" class="max-h-[90vh] max-w-[90vw] rounded shadow-2xl">
+    </div>
+
+    <script src="js/layout.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

@@ -119,58 +119,219 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const container = document.getElementById('menu-container');
+    // Menu carousel: one long horizontal track with every dish of every category.
+    // Swiping past the last dish of a category continues into the next one, and the
+    // category bar on top follows along. Tapping a category jumps to its first dish.
     const tabsContainer = document.getElementById('menu-tabs');
+    const track = document.getElementById('menu-track');
     const categoryNote = document.getElementById('category-note');
+    const counter = document.getElementById('menu-counter');
+    const prevButton = document.getElementById('menu-prev');
+    const nextButton = document.getElementById('menu-next');
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
-    let activeCategory = Object.keys(menuData)[0];
+
+    const TAB_BASE = 'flex-shrink-0 px-4 py-2 rounded-sm font-semibold uppercase tracking-wider text-xs md:text-sm transition-all duration-300 whitespace-nowrap';
+    const TAB_ACTIVE = 'bg-amber-600 text-white';
+    const TAB_INACTIVE = 'bg-stone-900 text-stone-200 border border-stone-800 hover:border-amber-600';
+
+    const categories = Object.keys(menuData);
+    const tabButtons = {};
+    const cards = [];
+    let activeCategory = null;
+    let suppressScrollSyncUntil = 0;
 
     function renderTabs() {
-        tabsContainer.innerHTML = '';
-        Object.keys(menuData).forEach(category => {
+        categories.forEach(category => {
             const button = document.createElement('button');
-            button.className = `px-6 py-2 rounded-sm font-semibold uppercase tracking-wider text-sm transition-all duration-300 ${activeCategory === category ? 'bg-amber-600 text-white' : 'bg-stone-900 text-stone-200 border border-stone-800 hover:border-amber-600'}`;
+            button.type = 'button';
+            button.className = `${TAB_BASE} ${TAB_INACTIVE}`;
             button.textContent = category;
-            button.onclick = () => {
-                activeCategory = category;
-                renderTabs();
-                renderMenu();
-            };
+            button.onclick = () => scrollToCategory(category);
             tabsContainer.appendChild(button);
+            tabButtons[category] = button;
         });
     }
 
-    function renderMenu() {
-        container.innerHTML = '';
-        
-        // Handle category note
-        if (menuData[activeCategory].note) {
-            categoryNote.textContent = menuData[activeCategory].note;
-            categoryNote.classList.remove('hidden');
-        } else {
-            categoryNote.classList.add('hidden');
-        }
+    function renderCards() {
+        categories.forEach(category => {
+            const items = menuData[category].items;
+            items.forEach((item, index) => {
+                const image = imageMap[item.id]
+                    ? `<img src="${imageMap[item.id]}" alt="${item.name}" loading="lazy" class="w-full h-full object-cover cursor-zoom-in" onclick="openLightbox('${imageMap[item.id]}')">`
+                    : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-stone-800 to-stone-900">
+                           <span class="font-display text-7xl text-amber-600/40">${item.id}</span>
+                       </div>`;
 
-        menuData[activeCategory].items.forEach(item => {
-            const itemImage = imageMap[item.id] ? `<img src="${imageMap[item.id]}" alt="${item.name}" loading="lazy" class="w-20 h-20 object-cover rounded shadow-lg flex-shrink-0 cursor-pointer hover:opacity-80 transition" onclick="openLightbox('${imageMap[item.id]}')">` : '<div class="w-20"></div>';
-            
-            const itemDiv = document.createElement('div');
-            itemDiv.className = 'bg-stone-900 p-4 rounded border border-stone-800 flex items-center gap-4 hover:border-amber-700 transition-all';
-            
-            itemDiv.innerHTML = `
-                ${itemImage}
-                <div class="flex-grow">
-                    <div class="flex justify-between items-baseline mb-1">
-                        <h4 class="font-bold text-lg text-stone-100"><span class="text-amber-600 mr-2">${item.id}.</span>${item.name}</h4>
-                        <span class="font-semibold text-stone-300 whitespace-nowrap">${item.price}</span>
+                const card = document.createElement('article');
+                card.className = 'flex-shrink-0 basis-[85%] sm:basis-[46%] lg:basis-[31%] snap-start bg-stone-900 rounded border border-stone-800 overflow-hidden flex flex-col';
+                card.dataset.category = category;
+                card.dataset.position = `${index + 1} / ${items.length}`;
+                card.innerHTML = `
+                    <div class="aspect-[4/3] sm:aspect-square">${image}</div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <p class="text-xs uppercase tracking-widest text-stone-500 mb-2">${category}</p>
+                        <div class="flex justify-between items-baseline gap-3 mb-2">
+                            <h3 class="font-bold text-xl text-stone-100"><span class="text-amber-600 mr-2">${item.id}.</span>${item.name}</h3>
+                            <span class="font-semibold text-amber-500 whitespace-nowrap">${item.price}</span>
+                        </div>
+                        <p class="text-sm text-stone-400 italic">${item.description}</p>
                     </div>
-                    <p class="text-sm text-stone-500 italic">${item.description}</p>
-                </div>
-            `;
-            container.appendChild(itemDiv);
+                `;
+                track.appendChild(card);
+                cards.push(card);
+            });
         });
     }
+
+    function setActiveCategory(category) {
+        if (category === activeCategory) return;
+        activeCategory = category;
+
+        categories.forEach(c => {
+            tabButtons[c].className = `${TAB_BASE} ${c === category ? TAB_ACTIVE : TAB_INACTIVE}`;
+        });
+
+        // Keep the active category centred in the bar; the browser clamps this at both ends
+        const button = tabButtons[category];
+        tabsContainer.scrollTo({
+            left: button.offsetLeft - (tabsContainer.clientWidth - button.offsetWidth) / 2,
+            behavior: 'smooth'
+        });
+
+        const note = menuData[category].note;
+        categoryNote.textContent = note || '';
+        categoryNote.classList.toggle('invisible', !note);
+    }
+
+    // The current dish is the first card whose middle is past the left edge of the track
+    function currentCardIndex() {
+        const left = track.scrollLeft;
+        const index = cards.findIndex(card => card.offsetLeft + card.offsetWidth / 2 > left);
+        return index === -1 ? cards.length - 1 : index;
+    }
+
+    function syncWithScroll() {
+        const index = currentCardIndex();
+        const atEnd = track.scrollLeft >= track.scrollWidth - track.clientWidth - 2;
+        const card = atEnd ? cards[cards.length - 1] : cards[index];
+
+        counter.textContent = `${cards[index].dataset.category.toLowerCase()} · ${cards[index].dataset.position}`;
+        prevButton.disabled = track.scrollLeft <= 2;
+        nextButton.disabled = atEnd;
+
+        if (Date.now() >= suppressScrollSyncUntil) {
+            setActiveCategory(card.dataset.category);
+        }
+    }
+
+    function scrollToCard(card) {
+        track.scrollTo({ left: card.offsetLeft - parseFloat(getComputedStyle(track).paddingLeft), behavior: 'smooth' });
+    }
+
+    function scrollToCategory(category) {
+        // Avoid flashing every category in between while the track scrolls past them
+        suppressScrollSyncUntil = Date.now() + 700;
+        setActiveCategory(category);
+        scrollToCard(cards.find(card => card.dataset.category === category));
+    }
+
+    function step(direction) {
+        const target = cards[Math.min(Math.max(currentCardIndex() + direction, 0), cards.length - 1)];
+        scrollToCard(target);
+    }
+
+    // Let mouse users drag the horizontal scrollers like on a phone. Touch already
+    // scrolls natively, so only mouse pointers are handled here.
+    function enableDragScroll(scroller, onRelease) {
+        let dragging = false;
+        let moved = false;
+        let startX = 0;
+        let startScroll = 0;
+
+        scroller.addEventListener('pointerdown', event => {
+            if (event.pointerType !== 'mouse' || event.button !== 0) return;
+            dragging = true;
+            moved = false;
+            startX = event.clientX;
+            startScroll = scroller.scrollLeft;
+        });
+
+        scroller.addEventListener('pointermove', event => {
+            if (!dragging) return;
+            const distance = event.clientX - startX;
+            if (!moved) {
+                if (Math.abs(distance) < 5) return;
+                moved = true;
+                scroller.setPointerCapture(event.pointerId);
+                // Snapping fights a manual drag, so switch it off until release
+                scroller.style.scrollSnapType = 'none';
+                scroller.classList.add('cursor-grabbing');
+            }
+            scroller.scrollLeft = startScroll - distance;
+        });
+
+        const endDrag = event => {
+            if (!dragging) return;
+            dragging = false;
+            if (!moved) return;
+            scroller.classList.remove('cursor-grabbing');
+            if (onRelease) onRelease(event.clientX - startX);
+            // Give the smooth scroll time to land before snapping takes over again
+            setTimeout(() => {
+                if (!dragging) scroller.style.scrollSnapType = '';
+            }, 600);
+        };
+        scroller.addEventListener('pointerup', endDrag);
+        scroller.addEventListener('pointercancel', endDrag);
+
+        // A drag shouldn't also count as a click on a category or a dish photo
+        scroller.addEventListener('click', event => {
+            if (moved) {
+                event.preventDefault();
+                event.stopPropagation();
+                moved = false;
+            }
+        }, true);
+        scroller.addEventListener('dragstart', event => event.preventDefault());
+    }
+
+    // After a drag, land on the dish coming into view in the direction of the drag
+    function snapTrackAfterDrag(distance) {
+        const padding = parseFloat(getComputedStyle(track).paddingLeft);
+        const position = track.scrollLeft;
+        const lefts = cards.map(card => card.offsetLeft - padding);
+        let index;
+        if (distance < -40) {
+            index = lefts.findIndex(left => left > position);
+        } else if (distance > 40) {
+            index = lefts.findLastIndex(left => left < position);
+        } else {
+            index = lefts.reduce((best, left, i) => Math.abs(left - position) < Math.abs(lefts[best] - position) ? i : best, 0);
+        }
+        if (index === -1) index = distance < 0 ? cards.length - 1 : 0;
+        scrollToCard(cards[index]);
+    }
+
+    enableDragScroll(track, snapTrackAfterDrag);
+    enableDragScroll(tabsContainer);
+
+    let scrollFrame = null;
+    track.addEventListener('scroll', () => {
+        if (scrollFrame) return;
+        scrollFrame = requestAnimationFrame(() => {
+            scrollFrame = null;
+            syncWithScroll();
+        });
+    }, { passive: true });
+
+    prevButton.onclick = () => step(-1);
+    nextButton.onclick = () => step(1);
+    track.addEventListener('keydown', event => {
+        if (event.key === 'ArrowRight') { event.preventDefault(); step(1); }
+        if (event.key === 'ArrowLeft') { event.preventDefault(); step(-1); }
+    });
+    window.addEventListener('resize', syncWithScroll);
 
     // Lightbox function exposed to window
     window.openLightbox = (src) => {
@@ -179,5 +340,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     renderTabs();
-    renderMenu();
+    renderCards();
+    syncWithScroll();
 });
